@@ -9,7 +9,7 @@ const questions = ref([
       'A framework for building user interfaces',
       'A framework for building user interfaces',
       'A framework for building user interfaces',
-      'A framework for building user interfaces'
+      'A framework for building user interfaces',
     ],
     selected: null
   },
@@ -20,7 +20,7 @@ const questions = ref([
       'A framework for building user interfaces',
       'A framework for building user interfaces',
       'A framework for building user interfaces',
-      'A framework for building user interfaces'
+      'A framework for building user interfaces',
     ],
     selected: 3
   },
@@ -31,7 +31,7 @@ const questions = ref([
       'A framework for building user interfaces',
       'A framework for building user interfaces',
       'A framework for building user interfaces',
-      'A framework for building user interfaces'
+      'A framework for building user interfaces',
     ],
     selected: null
   },
@@ -42,7 +42,7 @@ const questions = ref([
       'A framework for building user interfaces',
       'A framework for building user interfaces',
       'A framework for building user interfaces',
-      'A framework for building user interfaces'
+      'A framework for building user interfaces',
     ],
     selected: null
   }
@@ -120,7 +120,7 @@ const nextQuestion = () => {
 
     <section v-else>
       <h2>you have finished the quiz</h2>
-      <p>your score is {{ score }}  {{ questions.length }}</p>
+      <p>your score is {{ score }} / {{ questions.length }}</p>
     </section>
   </main>
 </template>
