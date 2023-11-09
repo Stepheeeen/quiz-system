@@ -22,7 +22,7 @@ const questions = ref([
       'A framework for building user interfaces',
       'A framework for building user interfaces',
     ],
-    selected: 3
+    selected: null
   },
   {
     question: 'What is something js?',
