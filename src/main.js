@@ -1,22 +1,22 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import VueRouter from 'vue-router'
-import PageOne from './components/PageOne.vue'
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import App from './page/App.vue';
+import PageOne from './page/PageOne.vue';
 
-const router = VueRouter.createRouter({
-  history: VueRouter.createWebHistory(),
+const router = createRouter({
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
-      component: App // This could be your main container
+      component: App,
     },
     {
       path: '/Question-1',
-      component: PageOne
-    }
-  ]
-})
+      component: PageOne,
+    },
+  ],
+});
 
-const app = createApp(App)
-app.use(router)
-app.mount('#app') // Assuming your main app container has an element with id 'app'
+const app = createApp(App);
+app.use(router);
+app.mount('#app');
